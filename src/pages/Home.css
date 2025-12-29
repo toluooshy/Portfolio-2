@@ -1,0 +1,126 @@
+.home {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 32px 20px 80px;
+}
+
+/* ================= HERO ================= */
+
+.hero {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.site-title {
+  font-style: italic;
+  font-weight: 400;
+  letter-spacing: 0.06em;
+  margin-bottom: 12px;
+}
+
+.site-logo {
+  width: 50px;
+  height: 50px;
+
+  /* feels printed + scanned */
+  filter: contrast(1.1);
+}
+
+/* ================= INTRO ================= */
+
+.intro h4,
+.links h4 {
+  margin-bottom: 12px;
+  letter-spacing: 0.04em;
+}
+
+.intro p {
+  max-width: 640px;
+  margin: 0 auto 24px;
+  text-align: left;
+}
+
+/* stats block: terminal / print hybrid */
+.stats {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 16px 18px;
+
+  font-family: inherit;
+  font-size: 0.9rem;
+
+  background: repeating-linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.05),
+    rgba(0, 0, 0, 0.05) 1px,
+    transparent 1px,
+    transparent 3px
+  );
+
+  border: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+/* ================= LINKS ================= */
+
+.links {
+  margin-top: 56px;
+}
+
+.link-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.link-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  padding: 10px 12px;
+
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.06),
+    rgba(0, 0, 0, 0.02)
+  );
+
+  font-size: 0.9rem;
+}
+
+/* icon treatment */
+.link-item img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+
+  filter: grayscale(100%) contrast(1.2);
+}
+
+/* hover = flash, not smooth */
+.link-item:hover {
+  background-color: var(--fg);
+  color: var(--bg);
+}
+
+/* keyboard focus */
+.link-item:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 2px var(--fg);
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (min-width: 700px) {
+  .home {
+    padding-top: 48px;
+  }
+
+  .intro p,
+  .stats {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
