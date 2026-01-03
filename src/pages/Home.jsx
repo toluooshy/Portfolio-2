@@ -1,23 +1,53 @@
 import "./Home.css";
-import logo from "../media/toshinowo.png";
 
-/* optional icons if you have them */
-import coinbase from "../media/coinbase.png";
-import kairos from "../media/kairoslogo.png";
-import antenna from "../media/antenna.png";
-import noodles from "../media/noodles.png";
-import wellesley from "../media/wellesley.png";
-import wobble from "../media/wobblefinance.png";
-import hipster from "../media/hipstertrek.png";
-import storyboard from "../media/storyboard.png";
+import headshot from "../media/headshot.png";
+import linkedin from "../media/linkedin.png";
+import github from "../media/github.png";
+import mastodon from "../media/mastodon.png";
+import bluesky from "../media/bluesky.png";
+import resume from "../media/cv.png";
+import resumePdf from "../media/resume.pdf";
+import princeton from "../media/princeton.png";
+import princetonPdf from "../media/princeton.pdf";
+import olin from "../media/olin.png";
+import olinPdf from "../media/olin.pdf";
 
 export default function Home() {
   return (
     <main className="home">
       <section className="hero">
-        <h1>Hello!</h1>
-        <img src={logo} alt="toshinowo.co logo" className="site-logo" />
+        <img
+          src={headshot}
+          alt="Tolulope Oshinowo monochrome headshot."
+          className="site-logo"
+        />
       </section>
+
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          marginTop: -40,
+          marginBottom: 20,
+        }}
+      >
+        <LinkItem icon={resume} href={resumePdf}></LinkItem>
+        <LinkItem
+          icon={linkedin}
+          href="https://www.linkedin.com/in/tolulope-oshinowo"
+        ></LinkItem>
+        <LinkItem icon={github} href="https://github.com/toluooshy"></LinkItem>
+        <LinkItem
+          icon={mastodon}
+          href="https://micro.blogs.princeton.edu/@tolu"
+        ></LinkItem>
+        <LinkItem
+          icon={bluesky}
+          href="https://bsky.app/profile/toshinowo.co"
+        ></LinkItem>
+        <LinkItem icon={princeton} href={princetonPdf}></LinkItem>
+        <LinkItem icon={olin} href={olinPdf}></LinkItem>
+      </div>
 
       <section className="intro">
         <p>
@@ -44,7 +74,6 @@ function LinkItem({ icon, href, children }) {
   return (
     <a className="link-item" href={href} target="_blank" rel="noreferrer">
       {icon && <img src={icon} alt="" />}
-      <span>{children}</span>
     </a>
   );
 }

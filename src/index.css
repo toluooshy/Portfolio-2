@@ -1,12 +1,12 @@
 :root {
-  --bg: #fbf4ee;
+  --bg: #f8f4f8;
   --fg: #111;
   --muted: #444;
   --border: #111;
 
   /* CRT tuning */
-  --scanline-alpha: 0.035;
-  --grain-alpha: 0.025;
+  --scanline-alpha: 0.015;
+  --grain-alpha: 0.015;
 }
 
 /* ---------------- RESET ---------------- */
@@ -88,7 +88,7 @@ a::after {
     rgba(0, 0, 0, 0.4),
     transparent
   );
-  opacity: 0.6;
+  opacity: 0.5;
 }
 
 /* ---------------- TEXT SELECTION ---------------- */
@@ -109,7 +109,7 @@ h3 {
 
 /* Body text slightly tighter like print */
 p {
-  line-height: 1.6;
+  line-height: 1.4;
 }
 
 /* ---------------- FLASH-ERA INTERACTION ---------------- */
