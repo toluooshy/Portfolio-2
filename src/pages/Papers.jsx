@@ -108,8 +108,8 @@ export default function Papers() {
       <Paper
         title="How do College Students Use ChatGPT to Learn to Code"
         href="https://drive.google.com/file/d/1jcoudDb6IsXPTy8mIIti0VDfcI2MLr8I"
-        meta="Princeton University · 2025"
-        coauthors="Zhang, Alicki, Zheng,Oshinowo."
+        meta="Princeton University · 2023"
+        coauthors="Zhang, Alicki, Zheng, Oshinowo."
       >
         A study investigating how university students leverage ChatGPT to learn
         programming. The research combines surveys of 108 students across 12
