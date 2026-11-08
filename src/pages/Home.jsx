@@ -51,19 +51,43 @@ export default function Home() {
 
       <section className="intro">
         <p>
-          Hi — I'm <strong>Tolulope Oshinowo</strong>, a Master's student in
-          Computer Science at Princeton University and a former ECE graduate of
-          Olin College. My work sits at the intersection of software
-          engineering, applied research, and public-facing technology.
+          Hi — I'm <strong>Tolulope Oshinowo</strong>, a computer scientist,
+          software engineer, and researcher with a background in Computer
+          Science from Princeton University and Electrical and Computer
+          Engineering from Olin College. My work spans human-computer
+          interaction, applied AI, and open-source software, with a particular
+          interest in how emerging technologies can better serve the people and
+          communities they affect.
           <br />
           <br />
-          I'm particularly interested in building systems that balance technical
-          rigor with human impact — spanning compliance infrastructure,
-          financial technology, sustainability research, and user-controlled
-          platforms. Outside of engineering, I'm deeply curious about how
-          technology interacts with policy, markets, and everyday
-          decision-making. In my free time, I enjoy producing music, sketching
-          early-stage product ideas, and staying active through sports.
+          I've worked across industry and academia, from building internal AI
+          tools and compliance infrastructure to researching decentralized
+          social media, user agency, and the politics of technology. More
+          recently, I've been exploring local AI systems and new ways of making
+          software creation more accessible through projects like{" "}
+          <a
+            href="https://thistle.earth"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Thistle
+          </a>{" "}
+          and{" "}
+          <a
+            href="https://partial.live"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Partial
+          </a>
+          . Across these efforts, I'm interested in building technically
+          rigorous systems while asking broader questions about who controls
+          them, how they're used, and whose needs they serve.
+          <br />
+          <br />
+          Outside of engineering and research, I enjoy producing music,
+          sketching early-stage product ideas, and staying active through
+          sports.
         </p>
       </section>
     </main>

@@ -16,6 +16,8 @@ import gth from "../media/gth.mp4";
 import cdclbuddy from "../media/cdclbuddy.gif";
 import pantry from "../media/pantry.mp4";
 import jist from "../media/jist.mp4";
+import partial from "../media/partial.mp4";
+import thistle from "../media/thistle.mp4";
 
 export default function Projects() {
   return (
@@ -25,28 +27,39 @@ export default function Projects() {
       </header>
 
       <Project
-        title="Jist! (2025-present)"
-        href="https://jist.cc/"
-        image={jist}
+        title="Partial (2026-Present)"
+        href="https://partial.live"
+        image={partial}
       >
-        Jist! is an AI-powered mobile app that helps users make healthier food
-        choices by instantly identifying what they're eating and suggesting
-        better alternatives. Using camera and voice input, the app recognizes
-        foods without requiring packaging or barcodes and returns personalized
-        recipe suggestions in seconds.
+        Partial is an AI-powered platform for creating interactive mobile
+        widgets from natural-language prompts, making software creation more
+        accessible to people without traditional programming experience.
         <br />
         <br />
-        The system combines multimodal machine learning—including vision, OCR,
-        and multilingual speech-to-text—with a retrieval-augmented generation
-        pipeline. Identified foods are enriched with structured nutrition and
-        recipe data, then passed through a GPT-4.1 based language model to
-        generate skill-appropriate, goal-aware recipes. Jist! also includes a
-        lightweight, optional social layer for saving, sharing, and exporting
-        recipes.
+        The project introduces a novel approach to cross-platform animated
+        widget development, using a custom scripting language and compilation
+        pipeline to run widgets natively on iOS and Android (patent pending).
       </Project>
 
       <Project
-        title="Pantry (2024-present)"
+        title="Thistle (2026-Present)"
+        href="https://thistle.earth"
+        image={thistle}
+      >
+        Thistle is an open-source local AI platform for building and running
+        AI-powered applications with open-weight models, without relying on
+        external APIs.
+        <br />
+        <br />
+        The project includes a desktop application for local AI collaboration
+        and a React Native package for on-device inference in mobile apps. It
+        also explores running and fine-tuning open-weight models, including
+        Llama and Qwen, to evaluate their capabilities, compatibility, and the
+        tradeoffs of local inference.
+      </Project>
+
+      <Project
+        title="Pantry (2024-2026)"
         href="https://pantryapp.xyz"
         source={"https://github.com/Princeton-HCI/pantry-app"}
         image={pantry}
@@ -65,7 +78,7 @@ export default function Projects() {
       </Project>
 
       <Project
-        title="Sustainable Finance Hub (2024-present)"
+        title="Sustainable Finance Hub (2024-2026)"
         href="https://www.sustainablefinancehub.net"
         source={"https://github.com/sustainablefinancehub/SFH-Web"}
         image={sfh}
